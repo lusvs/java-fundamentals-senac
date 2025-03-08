@@ -1,21 +1,15 @@
-//3. Dado um valor inteiro de 1 até 10, imprimir a “tabela” da
-// tabuada deste valor;
+/******************************************************************************
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package ado2.pi;
+Dado um valor inteiro de 1 até 10, imprimir a “tabela” da
+tabuada deste valor;
 
+*******************************************************************************/
 import java.util.Scanner;
 
-/**
- *
- * @author lucas.svsantos1
- */
-public class exr3 {
+public class exr3 
+{
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
     
     System.out.println("Digite um numero de 1 a 10: ");
     int numero = scanner.nextInt();
@@ -49,3 +43,4 @@ public class exr3 {
      }
     }
 }
+
