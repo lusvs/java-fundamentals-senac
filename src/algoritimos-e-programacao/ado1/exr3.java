@@ -13,7 +13,7 @@ Massa Corpórea  Grau de Obesidade
 *******************************************************************************/
 import java.util.Scanner;
 
-public class exr2
+public class exr3
 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
