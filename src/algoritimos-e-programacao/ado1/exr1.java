@@ -1,81 +1,55 @@
+/******************************************************************************
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-/**
- *
- * @author lucas.svsantos1
- */
+Crie um código que veja a frequencia do aluno, caso mais de 18 faltas, printar
+reprovado, caso contrario, leia as 4 notas dele e calcule a media, se maior que
+6, aprovado, se menor, reprovado.
+
+*******************************************************************************/
 import java.util.Scanner;
  
-public class aula { 
+public class media
+{ 
+    public static void main(String[] args){
+      Scanner input = new Scanner(System.in);
  
-public static void main(String[] args){
+        System.out.println("***Calcula Media***");
  
-Scanner input = new Scanner(System.in);
+        System.out.println("Nome");
+        String nome = input.next();
  
+        System.out.println("Nota 1:");
+        float n1 = input.nextFloat();
  
-System.out.println("***Calcula Media***");
+        System.out.println("Nota 2:");
+        float n2 = input.nextFloat();
  
-System.out.println("Nome");
+        System.out.println("Nota 3:");
+        float n3 = input.nextFloat();
  
-String nome = input.next();
+        float media = ((n1*0.2f)+(n2*0.3f)+(n3*0.5f));
  
-System.out.println("Nota 1:");
+        System.out.println(nome + ", sua media é: " + media);
+        System.out.printf("%s, /n sua média foi: %.1f \n", nome, media);
+    
+        System.out.println("Quantidade de faltas: ");
  
-float n1 = input.nextFloat();
- 
-System.out.println("Nota 2:");
- 
-float n2 = input.nextFloat();
- 
-System.out.println("Nota 3:");
- 
-float n3 = input.nextFloat();
- 
-float media = ((n1*0.2f)+(n2*0.3f)+(n3*0.5f));
- 
-System.out.println(nome + ", sua media é: " + media);
- 
-System.out.printf("%s, /nsua média foi: %.1f \n", nome, media);
- 
-System.out.println("Quantidade de faltas: ");
- 
-float faltas = input.nextFloat();
+        float faltas = input.nextFloat();
  
  
-//Tudo certo
+        //Tudo certo
+        if (media >= 6 && faltas <= 18)
+            System.out.println("Aprovado");
  
-if (media >= 6 && faltas <= 18){
+        //Muita falta
+        else if (media >= 6 && faltas >= 18)
+            System.out.println("Reprovado");
  
-System.out.println("Aprovado");
+        //Tudo errado
+        else if (media <= 6 && faltas >= 18)
+            System.out.println("Reprovado");
  
-} 
- 
-//Muita falta
- 
-else if (media >= 6 && faltas >= 18){
- 
-System.out.println("Reprovado");
- 
-} 
- 
-//Tudo errado
- 
-else if (media <= 6 && faltas >= 18){
- 
-System.out.println("Reprovado");
- 
-} 
- 
-//Media Ruim
- 
-else {
- 
-System.out.println("Reprovado");
- 
-} 
- 
-}
+        //Media Ruim
+        else 
+            System.out.println("Reprovado");
+    }
 }
