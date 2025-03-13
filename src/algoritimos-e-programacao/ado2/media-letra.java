@@ -56,7 +56,7 @@ public class mediaLetra
 	        System.out.println(nome + ", Sua nota foi " + media + ", então sua media é A.");
 	        break;
 	    case "B":
-	        System.out.println(nome + ", , Sua nota foi " + media + ", então sua media é B.");
+	        System.out.println(nome + ", Sua nota foi " + media + ", então sua media é B.");
 	        break;
 	    case "C":
 	        System.out.println(nome + ", Sua nota foi " + media + ", então sua media é C.");
